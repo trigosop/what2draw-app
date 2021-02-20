@@ -6,7 +6,6 @@
 body {
   background-color: #111;
   text-align: center;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -29,8 +28,9 @@ body {
 
 .description {
   color: rgb(255, 20, 147);
-  font-size: 3vmin;
   font-weight: 500;
+  font-size: 4vmin;
+  line-height: 1.25;
 }
 
 p {
@@ -50,9 +50,9 @@ p {
 .hint {
   padding: 0;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 a {
