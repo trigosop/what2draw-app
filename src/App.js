@@ -6,10 +6,13 @@ function App() {
     <>
       <div className="App">
         <h1 className="title">¡What2Draw!</h1>
-        <p className="description">
-          There are no rules! Just let the emojis inspire you. You can use one
-          or all three and find your own way to your next illustration
-        </p>
+        <div className="description">
+          <p>There are no rules! Just let the emojis inspire you.</p>
+          <p>
+            You can use one or all three and find your own way to your next
+            illustration
+          </p>
+        </div>
         <div className="Emojis">
           <span>
             {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
@@ -22,7 +25,7 @@ function App() {
           </span>
         </div>
 
-        <p className="description">
+        <div className="description">
           You can use the hashtag{' '}
           <strong>
             <a
@@ -34,7 +37,7 @@ function App() {
             </a>
           </strong>{' '}
           to see other people's artwork 😃
-        </p>
+        </div>
 
         <div id="hint" className="hint">
           Hint!
