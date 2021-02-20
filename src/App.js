@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Emojis from './data/emojis.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <div className="App">
+        <h1 className="title">¡What2Draw!</h1>
+        <p className="description">
+          Use the following emojis to unleash your imagination and create a
+          piece of art!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <div className="Emojis">
+          <span>
+            {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
+          </span>
+          <span>
+            {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
+          </span>
+          <span>
+            {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
+          </span>
+        </div>
+
+        <p className="description">
+          You can use the hashtag{' '}
+          <strong>
+            <a
+              href="https://www.instagram.com/explore/tags/what2drawapp/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              #what2drawapp
+            </a>
+          </strong>{' '}
+          to see other people's artwork 😃
+        </p>
+
+        <div id="hint" className="hint">
+          Hint!
+          <div id="tooltip" role="tooltip" data-popper-placement="bottom">
+            Refresh the page to get a new set of emojis, but... that's kinda
+            cheating!! 👮‍♂️
+            <div id="arrow" data-popper-arrow></div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
