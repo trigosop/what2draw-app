@@ -8,7 +8,9 @@ function App() {
         <h1 className="title">¡What2Draw!</h1>
         <p className="description">
           Use the following emojis to unleash your imagination and create a
-          piece of art!
+          piece of art! There are no rules! Just let the emojis inspire you. You
+          can use one or all three and find your own way to your next
+          illustration
         </p>
         <div className="Emojis">
           <span>
