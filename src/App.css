@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
+@import-normalize;
+
 body {
   background-color: deeppink;
   text-align: center;
@@ -46,10 +48,13 @@ p {
 .hint {
   padding: 0;
   margin: 0;
-  margin-top: 5rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: gold;
+  margin-top: 5rem;
+}
+
+a {
+  color: unset;
 }
 
 #hint {
@@ -57,18 +62,38 @@ p {
   position: relative;
 }
 
+.refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 2em;
+  height: 2em;
+
+  background-color: whitesmoke;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 6px 0px -1px rgba(0, 0, 0, 0.6);
+}
+
+.refresh:focus {
+  outline: none;
+}
+
 #tooltip {
   display: block;
-  background: #ffffff;
-  color: #643045;
+  background: #fafafa;
+  color: #111;
   font-weight: bold;
-  padding: 5px 10px;
-  font-size: 13px;
+  padding: 0.5rem;
   border-radius: 4px;
 
   position: absolute;
   top: calc(100% + 8px);
-  left: -150px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 300px;
 }
 
@@ -79,6 +104,7 @@ p {
   height: 8px;
   background: inherit;
   left: 50%;
+  transform: translateX(-50%);
 }
 
 #arrow {
@@ -105,8 +131,4 @@ p {
 
 #tooltip[data-popper-placement^='right'] > #arrow {
   left: -4px;
-}
-
-a {
-  color: unset;
 }
