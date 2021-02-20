@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 @import-normalize;
@@ -74,7 +73,7 @@ a {
   height: 2em;
 
   background-color: whitesmoke;
-  color: rgba(255, 20, 147, 1);
+  color: #ff1493;
   padding: 0.5rem;
   border-radius: 8px;
   border: none;
