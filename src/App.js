@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import './App.css';
 import Emojis from './data/emojis.json';
 
 function App() {
+  const setValue = useState()[1];
+
+  const refresh = () => {
+    setValue({});
+  };
+
   return (
     <>
       <div className="App">
@@ -40,9 +47,11 @@ function App() {
         </div>
 
         <div id="hint" className="hint">
-          Hint!
+          <button onClick={refresh} className="refresh">
+            ♻
+          </button>
           <div id="tooltip" role="tooltip" data-popper-placement="bottom">
-            Refresh the page to get a new set of emojis, but... that's kinda
+            Press this button to get a new set of emojis, but... that's kinda
             cheating!! 👮‍♂️
             <div id="arrow" data-popper-arrow></div>
           </div>
