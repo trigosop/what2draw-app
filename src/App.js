@@ -39,6 +39,7 @@ function App() {
               href="https://www.instagram.com/explore/tags/what2drawapp/"
               target="_blank"
               rel="noreferrer"
+              title="Look for #what2drawapp posts on Instagram!"
             >
               #what2drawapp
             </a>
@@ -47,7 +48,7 @@ function App() {
         </div>
 
         <div id="hint" className="hint">
-          <button onClick={refresh} className="refresh">
+          <button onClick={refresh} className="refresh" aria-label="refresh emojis">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
