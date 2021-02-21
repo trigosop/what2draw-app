@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import EmojiList from './components/EmojiList';
 import './App.css';
-import Emojis from './data/emojis.json';
+import { useState } from 'react';
 
-function App() {
-  const setValue = useState()[1];
+export default function App() {
+  const setValue = useState({})[1];
 
   const refresh = () => {
     setValue({});
@@ -20,17 +20,8 @@ function App() {
             illustration.
           </p>
         </div>
-        <div className="Emojis">
-          <span>
-            {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
-          </span>
-          <span>
-            {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
-          </span>
-          <span>
-            {Emojis[Math.floor(Math.random() * Math.floor(Emojis.length))]}
-          </span>
-        </div>
+
+        <EmojiList></EmojiList>
 
         <div className="description">
           Use the hashtag{' '}
@@ -48,7 +39,11 @@ function App() {
         </div>
 
         <div id="hint" className="hint">
-          <button onClick={refresh} className="refresh" aria-label="refresh emojis">
+          <button
+            onClick={refresh}
+            className="refresh"
+            aria-label="refresh emojis"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -69,5 +64,3 @@ function App() {
     </>
   );
 }
-
-export default App;
