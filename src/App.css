@@ -13,6 +13,14 @@ body {
   background-color: #111;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  color: #ff1493;
+}
+
+.social {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1rem;
 }
 
 .App {
@@ -34,7 +42,6 @@ body {
 }
 
 .description {
-  color: rgb(255, 20, 147);
   font-weight: 500;
   font-size: 4vmin;
   line-height: 1.25;
